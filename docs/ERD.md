@@ -38,6 +38,7 @@ erDiagram
         int id
         string nazwa
         string rozmiar
+        int stan_magazynowy
     }
 
     WYPOZYCZENIE {
