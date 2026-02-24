@@ -4,9 +4,9 @@
 
 ---
 ### Kluczowe funkcjonalności:
-* System Rezerwacji: Wybór konkretnej daty i godziny (sesji ślizgawek).
+* System Rezerwacji: Wybór konkretnej daty i godziny.
 
-* Wypożyczalnia Sprzętu: Możliwość zarezerwowania łyżew (według rozmiaru), kasku lub „pingwinka” do nauki jazdy razem z biletem.
+* Wypożyczalnia Sprzętu: Możliwość zarezerwowania łyżew (według rozmiaru).
 
 * Panel Administratora: Podgląd liczby osób na lodowisku w danym czasie (limity bezpieczeństwa), zarządzanie cennikiem i stanem magazynowym wypożyczalni.
 
