@@ -1,49 +1,59 @@
 ```mermaid
 erDiagram
-    UZYTKOWNIK ||--o{ REZERWACJA : "robi"
+    UZYTKOWNIK ||--o{ REZERWACJA : sklada
+    SESJA ||--o{ REZERWACJA : dotyczy
+    REZERWACJA ||--o{ BILET : zawiera
+    TYP_BILETU ||--o{ BILET : okresla
+    BILET ||--o{ WYPOZYCZENIE : moze_posiadac
+    TYP_SPRZETU ||--o{ WYPOZYCZENIE : "okresla rodzaj"
+
     UZYTKOWNIK {
-        int id
-        string login
-        string email
-        string haslo
+        int id PK
+        string imie
+        string nazwisko
+        string email UK
         string numer_telefonu
     }
 
-    SESJA ||--o{ BILET : "dotyczy"
     SESJA {
-        int id
-        datetime start
-        datetime koniec
-        int limity
+        int id PK
+        datetime start_sesji
+        datetime koniec_sesji
+        int max_liczba_miejsc
     }
 
-    REZERWACJA ||--o{ BILET : "zawiera"
     REZERWACJA {
-        int id
-        int uzytkownik_id
-        string status
-        decimal suma
+        int id PK
+        int uzytkownik_id FK
+        int sesja_id FK
+        string status_platnosci
+        decimal suma_calkowita
+        datetime data_utworzenia
     }
-
-    BILET ||--o{ WYPOZYCZENIE : "ma"
-    BILET {
-        int id
-        int rezerwacja_id
-        int sesja_id
-        string typ
-    }
-
-    SPRZET ||--o{ WYPOZYCZENIE : "jest w"
-    SPRZET {
-        int id
+    TYP_BILETU {
+        int id PK
         string nazwa
-        string rozmiar
-        int stan_magazynowy
+        decimal cena_domyslna
+    }
+
+    BILET {
+        int id PK
+        int rezerwacja_id FK
+        int typ_biletu_id FK
+        decimal cena_finalna
+    }
+
+    TYP_SPRZETU {
+        int id PK
+        string nazwa 
+        string rozmiar 
+        decimal cena_wypozyczenia
+        int liczba_dostepnych
     }
 
     WYPOZYCZENIE {
-        int id
-        int bilet_id
-        int sprzet_id
-        decimal cena
+        int id PK
+        int bilet_id FK
+        int typ_sprzetu_id FK
+        int ilosc 
     }
