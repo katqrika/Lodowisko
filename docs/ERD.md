@@ -13,6 +13,7 @@ erDiagram
         string nazwisko
         string email UK
         string numer_telefonu
+        string haslo
     }
 
     SESJA {
