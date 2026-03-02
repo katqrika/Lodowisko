@@ -4,7 +4,7 @@ erDiagram
     SESJA ||--o{ REZERWACJA : dotyczy
     REZERWACJA ||--o{ BILET : zawiera
     TYP_BILETU ||--o{ BILET : okresla
-    BILET ||--o{ WYPOZYCZENIE : moze_posiadac
+    BILET |o--o{ WYPOZYCZENIE : moze_miec
     TYP_SPRZETU ||--o{ WYPOZYCZENIE : "okresla rodzaj"
 
     UZYTKOWNIK {
