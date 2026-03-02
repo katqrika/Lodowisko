@@ -41,13 +41,12 @@ erDiagram
         int id PK
         int rezerwacja_id FK
         int typ_biletu_id FK
-        decimal cena_finalna
     }
 
     TYP_SPRZETU {
         int id PK
         string nazwa 
-        string rozmiar 
+        int rozmiar 
         decimal cena_wypozyczenia
         int liczba_dostepnych
     }
@@ -57,4 +56,6 @@ erDiagram
         int bilet_id FK
         int typ_sprzetu_id FK
         int ilosc 
+        datetime data_wypozyczenia
+        datetime data_zwrotu
     }
