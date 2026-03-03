@@ -48,7 +48,6 @@ erDiagram
         string nazwa 
         int rozmiar 
         decimal cena_wypozyczenia
-        int liczba_dostepnych
     }
 
     WYPOZYCZENIE {
