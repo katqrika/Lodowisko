@@ -11,7 +11,7 @@ erDiagram
         int id PK
         string imie
         string nazwisko
-        string email UK
+        string email 
         string numer_telefonu
         string haslo
     }
