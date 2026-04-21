@@ -18,6 +18,7 @@ erDiagram
 
     SESJA {
         int id PK
+        string typ 
         datetime start_sesji
         datetime koniec_sesji
         int max_liczba_miejsc
@@ -46,7 +47,8 @@ erDiagram
     TYP_SPRZETU {
         int id PK
         string nazwa 
-        int rozmiar 
+        int rozmiar
+        int ilosc
         decimal cena_wypozyczenia
     }
 
@@ -54,7 +56,8 @@ erDiagram
         int id PK
         int bilet_id FK
         int typ_sprzetu_id FK
-        int ilosc 
+        int ilosc
+        boolean status
         datetime data_wypozyczenia
         datetime data_zwrotu
     }
