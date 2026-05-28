@@ -5,9 +5,8 @@
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>Glacier Rink - Logowanie</title>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
 <script id="tailwind-config">
         tailwind.config = {
           darkMode: "class",
@@ -119,11 +118,10 @@
 <!-- Left Side: Atmospheric Brand Section -->
 <section class="relative hidden md:flex md:w-1/2 lg:w-3/5 h-screen overflow-hidden border-r border-outline-variant/20">
 <div class="absolute inset-0 z-0">
-<img class="w-full h-full object-cover" data-alt="An atmospheric, low-angle photograph of a pristine professional ice rink at night. The ice surface is perfectly smooth, reflecting cool blue and crisp white overhead arena lights. The setting is dark and moody, with deep arctic shadows and a technical, engineering-focused aesthetic. Thin cyan neon light accents trace the rink's perimeter, emphasizing a precision-engineered environment. The overall tone is cold, quiet, and exceptionally clean, consistent with a premium sports management system." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC7EJZX6MdKYfbCpj0NDaJL_Z-zhzjTQE_y1YVB2o4qEOfzWYS-NRaJe4TsKhhAdWGeB-uT0g-zsGU9K1M4c1wqSs4ILlnq1-1mZ1JD1gVA5HSmkDXN3yxXrGf7cCEaAC6mbAp3FwPtBFg714tTy9XbUVZiu590ne3bObFLO2FJWUQlD8NIRuLE_kx6ppda48U42oWISJPbfLfUy9LFQdQ-046TRirraP7GbnWYBbBGasuCc2kShN3wVWgVy46Oc4rJVwDCUOkHtddg"/>
+<img class="w-full h-full object-cover" alt="Lodowisko nocą" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC7EJZX6MdKYfbCpj0NDaJL_Z-zhzjTQE_y1YVB2o4qEOfzWYS-NRaJe4TsKhhAdWGeB-uT0g-zsGU9K1M4c1wqSs4ILlnq1-1mZ1JD1gVA5HSmkDXN3yxXrGf7cCEaAC6mbAp3FwPtBFg714tTy9XbUVZiu590ne3bObFLO2FJWUQlD8NIRuLE_kx6ppda48U42oWISJPbfLfUy9LFQdQ-046TRirraP7GbnWYBbBGasuCc2kShN3wVWgVy46Oc4rJVwDCUOkHtddg"/>
 <div class="absolute inset-0 ice-gradient"></div>
 <div class="absolute inset-0 technical-overlay"></div>
 </div>
-<!-- Brand Identity Overlays -->
 <div class="relative z-10 flex flex-col justify-between w-full p-xl">
 <div>
 <h1 class="font-h1-display text-h1-display text-primary tracking-tighter">GLACIER RINK</h1>
@@ -162,47 +160,64 @@
     Utwórz konto
 </a>
 </div>
-<!-- Social Logins -->
-<div class="flex flex-col gap-sm mb-xl">
-<button class="w-full py-3 px-md bg-on-surface text-surface font-semibold flex items-center justify-center gap-3 rounded-lg hover:opacity-90 active:scale-[0.98] transition-all">
-<svg class="w-5 h-5" viewbox="0 0 24 24">
-<path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"></path>
-<path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"></path>
-<path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"></path>
-<path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"></path>
-</svg>
-                        Kontynuuj z Google
-                    </button>
-<button class="w-full py-3 px-md bg-on-surface text-surface font-semibold flex items-center justify-center gap-3 rounded-lg hover:opacity-90 active:scale-[0.98] transition-all">
-<svg class="w-5 h-5" fill="currentColor" viewbox="0 0 24 24">
-<path d="M17.05 20.28c-.96 0-2.04-.6-3.23-.6-1.21 0-2.35.61-3.28.61-1.35 0-3.35-1.57-4.32-3.13-1.98-3.15-1.51-7.85.42-10.63.95-1.38 2.37-2.25 3.91-2.28 1.17-.02 2.28.79 3 .79s2.03-.82 3.42-.68c.58.03 2.22.24 3.28 1.78-.09.05-1.96 1.14-1.94 3.4.03 2.76 2.25 3.73 2.28 3.75-.02.05-.35 1.23-1.2 2.47-.73 1.07-1.5 2.14-2.69 2.14zM14.28 4.24c-.62.75-1.67 1.34-2.65 1.26-.14-1.12.38-2.27 1.03-3.04.66-.77 1.83-1.33 2.74-1.26.15 1.16-.5 2.29-1.12 3.04z"></path>
-</svg>
-                        Kontynuuj z Apple
-                    </button>
+
+{{-- Komunikat o błędzie --}}
+@if ($errors->any())
+<div class="mb-lg p-md bg-error-container rounded-lg border border-error/30">
+    <ul class="list-none space-y-xs">
+        @foreach ($errors->all() as $error)
+            <li class="font-body-small text-on-error-container flex items-center gap-xs">
+                <span class="material-symbols-outlined text-[16px]">error</span>
+                {{ $error }}
+            </li>
+        @endforeach
+    </ul>
 </div>
-<div class="relative mb-xl">
-<div class="absolute inset-0 flex items-center">
-<div class="w-full border-t border-outline-variant/20"></div>
+@endif
+
+{{-- Komunikat sukcesu (np. po rejestracji) --}}
+@if (session('success'))
+<div class="mb-lg p-md bg-primary-container rounded-lg border border-primary/30">
+    <p class="font-body-small text-on-primary-container flex items-center gap-xs">
+        <span class="material-symbols-outlined text-[16px]">check_circle</span>
+        {{ session('success') }}
+    </p>
 </div>
-<div class="relative flex justify-center">
-<span class="px-md bg-surface text-on-surface-variant font-data-label text-data-label uppercase">lub e-mail</span>
-</div>
-</div>
+@endif
+
 <!-- Form Fields -->
-<form class="flex flex-col gap-lg">
+<form class="flex flex-col gap-lg" method="POST" action="{{ route('login.post') }}">
+@csrf
 <div class="flex flex-col gap-xs">
-<label class="font-data-label text-data-label text-on-surface-variant uppercase ml-1">Adres E-mail</label>
-<input class="w-full bg-surface-container-lowest border border-primary-container text-on-surface p-md rounded-lg focus:ring-1 focus:ring-primary focus:border-primary outline-none transition-all" placeholder="email@example.pl" type="email"/>
+<label class="font-data-label text-data-label text-on-surface-variant uppercase ml-1" for="email">Adres E-mail</label>
+<input
+    id="email"
+    name="email"
+    class="w-full bg-surface-container-lowest border @error('email') border-error @else border-primary-container @enderror text-on-surface p-md rounded-lg focus:ring-1 focus:ring-primary focus:border-primary outline-none transition-all"
+    placeholder="email@example.pl"
+    type="email"
+    value="{{ old('email') }}"
+    autocomplete="email"
+    required
+/>
 </div>
 <div class="flex flex-col gap-xs">
 <div class="flex justify-between items-center ml-1">
-<label class="font-data-label text-data-label text-on-surface-variant uppercase">Hasło</label>
+<label class="font-data-label text-data-label text-on-surface-variant uppercase" for="haslo">Hasło</label>
 <a class="text-xs text-primary hover:underline font-medium" href="#">Zapomniałeś hasła?</a>
 </div>
-<input class="w-full bg-surface-container-lowest border border-primary-container text-on-surface p-md rounded-lg focus:ring-1 focus:ring-primary focus:border-primary outline-none transition-all" placeholder="••••••••" type="password"/>
+<input
+    id="haslo"
+    name="haslo"
+    class="w-full bg-surface-container-lowest border @error('haslo') border-error @else border-primary-container @enderror text-on-surface p-md rounded-lg focus:ring-1 focus:ring-primary focus:border-primary outline-none transition-all"
+    placeholder="••••••••"
+    type="password"
+    autocomplete="current-password"
+    required
+/>
 </div>
 <div class="flex items-center gap-sm">
-<input class="w-4 h-4 rounded border-outline-variant bg-surface-container-lowest text-primary focus:ring-primary" id="remember" type="checkbox"/>
+<input class="w-4 h-4 rounded border-outline-variant bg-surface-container-lowest text-primary focus:ring-primary" id="remember" name="remember" type="checkbox" value="1"/>
 <label class="font-body-small text-on-surface-variant cursor-pointer" for="remember">Zapamiętaj mnie</label>
 </div>
 <button class="w-full py-4 bg-primary-container text-on-primary-container font-semibold rounded-lg flex items-center justify-center gap-2 hover:bg-primary-container/80 active:scale-[0.99] transition-all mt-md" type="submit">
@@ -219,7 +234,7 @@
 </div>
 </section>
 </main>
-<!-- Technical Footer Bar (Subtle) -->
+<!-- Technical Footer Bar -->
 <footer class="fixed bottom-0 w-full md:w-1/2 lg:w-2/5 right-0 p-md pointer-events-none">
 <div class="flex justify-between items-center font-data-label text-[10px] text-on-surface-variant/40 uppercase tracking-widest px-md">
 <span>© 2024 GLACIER RINK MANAGEMENT</span>
