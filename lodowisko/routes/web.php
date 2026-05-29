@@ -1,19 +1,23 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\ReservationController;
+use App\Http\Controllers\Admin\AdminDashboardController;
+use App\Http\Controllers\Admin\ScheduleController;
+use App\Http\Controllers\Admin\PricingController;
 
-Route::get('/', function () {
-    return view('welcome');
-})->name('welcome');
+// 1. Ścieżki publiczne
+Route::get('/', [HomeController::class, 'index'])->name('home');
 
-Route::get('/rejestracja', function () {
-    return view('auth.register');
-})->name('register');
+// 2. Ścieżki dla zalogowanych użytkowników (Klienci)
+Route::middleware(['auth'])->group(function () {
+    Route::get('/rezerwacja', [ReservationController::class, 'index'])->name('user.reservation');
+    Route::get('/katalog', [ReservationController::class, 'catalog'])->name('user.catalog');
+});
 
-Route::get('/login', function () {
-    return view('auth.login');
-})->name('login');
-
-Route::post('/rejestracja', function () {
-    // Miejsce na logikalną obsługę rejestracji  
-})->name('register.post');
+// 3. Ścieżki dla Administratora
+Route::middleware(['auth', 'admin'])->prefix('admin')->group(function () {
+    Route::get('/dashboard', [AdminDashboardController::class, 'index'])->name('admin.dashboard');
+    Route::get('/harmonogram', [ScheduleController::class, 'index'])->name('admin.schedule');
+    Route::get('/cennik', [PricingController::class, 'index'])->name('admin.pricing');
+});
